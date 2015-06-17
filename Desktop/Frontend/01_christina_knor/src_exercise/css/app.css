@@ -1,0 +1,176 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Lobster);
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background-image: -webkit-linear-gradient(white, #cccccc, #d3d3d3);
+  background-image: linear-gradient(white, #cccccc, #d3d3d3); }
+  body p {
+    font-family: 'Ubuntu', sans-serif; }
+  body h3, body h4 {
+    font-family: Helvetica;
+    color: #8080ff; }
+
+.sidebar ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 20px;
+  color: white; }
+  a:hover {
+    color: gray; }
+
+.mainHeader {
+  color: #3333ff;
+  margin-left: 30px;
+  padding-top: 60px; }
+  @media screen and (max-width: 768px) {
+    .mainHeader {
+      padding-top: 40px; } }
+
+.content {
+  float: left;
+  width: 80%; }
+
+div.grid-wrapper {
+  border-bottom: 1px solid #4d4d4d;
+  float: left;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 30px; }
+  div.grid-wrapper .title {
+    color: #4d4dff;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    div.grid-wrapper .title:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .title {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%; }
+        div.grid-wrapper .title:last-child {
+          margin-right: 0; } }
+  div.grid-wrapper .teaserText {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%; }
+    div.grid-wrapper .teaserText:last-child {
+      margin-right: 0; }
+    div.grid-wrapper .teaserText img {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      text-align: center; }
+      div.grid-wrapper .teaserText img:last-child {
+        margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        div.grid-wrapper .teaserText img {
+          float: left;
+          display: block;
+          margin-right: 4.82916%;
+          width: 30.11389%; }
+          div.grid-wrapper .teaserText img:last-child {
+            margin-right: 0; } }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .teaserText {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%; }
+        div.grid-wrapper .teaserText:last-child {
+          margin-right: 0; } }
+
+.sidebar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  background-color: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-rigth: 2px;
+  float: right; }
+  .sidebar:last-child {
+    margin-right: 0; }
+  .sidebar a {
+    font-size: 18px; }
+  .sidebar h4 {
+    margin-left: 10px; }
+  .sidebar .critics {
+    color: white;
+    font-size: 14px; }
+  @media screen and (max-width: 1300px) {
+    .sidebar .critics {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%;
+      font-size: 10px; }
+      .sidebar:last-child {
+        margin-right: 0; }
+      .sidebar .critics {
+        display: none; } }
+
+header.grid-wrapper, footer.grid-wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  background-color: black;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px; }
+  header.grid-wrapper:last-child, footer.grid-wrapper:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    header.grid-wrapper, footer.grid-wrapper {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 100%; }
+      header.grid-wrapper:last-child, footer.grid-wrapper:last-child {
+        margin-right: 0; } }
+
+footer {
+  margin-top: 20px; }
+
+footer h2, footer p, header h2, header p {
+  float: left;
+  color: #8080ff;
+  margin-left: 10px;
+  font-family: 'Lobster', cursive; }
+
+footer ul, header ul {
+  float: right;
+  margin-right: 40px;
+  list-style-type: none; }
+
+footer ul li, header ul li {
+  float: left;
+  padding-right: 10px; }
+
+footer p, header p {
+  margin-top: 25px; }
+
+.socialm-icons {
+  background-image: url("../img/socialmedia_icons.jpg");
+  background-width: 30px;
+  background-height: 30px; }
+
+/*# sourceMappingURL=app.css.map */

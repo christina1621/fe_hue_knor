@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+div.grid-wrapper {
+  padding-top: 10px;
+  border-bottom: 0px;
+  margin-bottom: 200px; }
+  div.grid-wrapper .fullImage {
+    margin-top: 20px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%;
+    text-align: center; }
+    div.grid-wrapper .fullImage:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .fullImage {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 12.64237%; }
+        div.grid-wrapper .fullImage:last-child {
+          margin-right: 0; } }
+  div.grid-wrapper .headLine {
+    margin-left: 20px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    color: #8080ff; }
+    div.grid-wrapper .headLine:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .headLine {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 65.05695%; }
+        div.grid-wrapper .headLine:last-child {
+          margin-right: 0; } }
+  div.grid-wrapper .byLine {
+    font-size: 12px;
+    font-family: 'Helvetica';
+    color: #8c8c8c;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    div.grid-wrapper .byLine:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .byLine {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 65.05695%; }
+        div.grid-wrapper .byLine:last-child {
+          margin-right: 0; } }
+  div.grid-wrapper .subHeader {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-top: 10px; }
+    div.grid-wrapper .subHeader:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .subHeader {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%; }
+        div.grid-wrapper .subHeader:last-child {
+          margin-right: 0; } }
+  div.grid-wrapper .fullText {
+    margin-top: 5px;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    div.grid-wrapper .fullText:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      div.grid-wrapper .fullText {
+        float: left;
+        display: block;
+        margin-right: 4.82916%;
+        width: 100%; }
+        div.grid-wrapper .fullText:last-child {
+          margin-right: 0; } }
+
+/*# sourceMappingURL=detail.css.map */

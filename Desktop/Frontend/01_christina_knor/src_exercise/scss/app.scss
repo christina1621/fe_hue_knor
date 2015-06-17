@@ -1,0 +1,181 @@
+// Sass Example
+@import "mymixins";
+@import "vendor/stylesheets/bourbon";
+@import "vendor/neat/neat";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu|Lobster);
+
+$mobile-breakpoint: new-breakpoint(max-width 768px 6);
+
+$hidetext: new-breakpoint(max-width 1300px 6);
+
+$main-color: #0000ff;
+
+
+body {
+  @include background-image(linear-gradient(white, #cccccc, #d3d3d3));
+  p {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  h3, h4{
+    font-family: Helvetica;
+    color: lighten($main-color, 25%);
+  }
+}
+
+.sidebar ul{
+  list-style-type:none;
+}
+
+a{
+  text-decoration: none;
+  font-family: Helvetica;
+  font-size: 20px;
+  color: white;
+  &:hover{
+    color: darken(white, 50%);
+  }
+}
+
+.mainHeader{
+  color: lighten($main-color, 10%);
+  margin-left: 30px;
+  padding-top: 60px;
+
+  @include media($mobile-breakpoint){
+    padding-top: 40px;
+  }
+}
+
+.content{
+  float:left;
+  width: 80%;
+}
+
+
+// my grid (second lesson)
+$grid-columns: 12;
+$max-width: em(960);
+
+div.grid-wrapper {
+  border-bottom: 1px solid darken(white, 70%);
+  float:left;
+  padding-top: 5px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+
+  .title{
+    color: lighten($main-color, 15%);
+    @include span-columns(10);
+
+    @include media($mobile-breakpoint){
+      @include span-columns(6);
+    }
+  }
+
+
+  .teaserText{
+    @include span-columns(10);
+
+
+    img{
+      @include span-columns(2);
+      text-align: center;
+
+      @include media($mobile-breakpoint){
+        @include span-columns(2);
+      }
+    }
+
+    @include media($mobile-breakpoint){
+      @include span-columns(6);
+    }
+  }
+
+
+
+}
+
+.sidebar{
+  @include span-columns(2);
+  background-color: black;
+  @include rounded(20px * 0.5);
+  margin-top: 10px;
+  margin-rigth: 2px;
+  float: right;
+
+  a{
+    font-size: 18px;
+  }
+
+
+
+  h4{
+    margin-left:10px;
+  }
+
+  .critics{
+    color: white;
+    font-size:14px;
+
+  }
+
+  @include media($hidetext){
+    .critics{
+      display:none;
+    }
+  }
+
+  @include media($mobile-breakpoint){
+    @include span-columns(6);
+    font-size: 10px;
+    .critics{
+      display: none;
+    }
+  }
+}
+
+
+header.grid-wrapper, footer.grid-wrapper {
+  @include span-columns(12);
+  background-color: black;
+  @include rounded(20px * 0.5);
+
+  @include media($mobile-breakpoint){
+    @include span-columns(6);
+  }
+}
+
+footer{
+  margin-top: 20px;
+}
+
+footer h2, footer p, header h2, header p{
+  float:left;
+  color: lighten($main-color, 25%);
+  margin-left: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+footer ul , header ul{
+  float:right;
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+footer ul li, header ul li{
+  float:left;
+  padding-right: 10px;
+
+}
+
+footer p, header p{
+  margin-top: 25px;
+}
+
+
+
+
+
+
+

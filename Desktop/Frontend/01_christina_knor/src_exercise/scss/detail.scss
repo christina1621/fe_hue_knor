@@ -1,0 +1,65 @@
+@import "mymixins";
+@import "vendor/stylesheets/bourbon";
+@import "vendor/neat/neat";
+
+$grid-columns: 12;
+$max-width: em(960);
+$mobile-breakpoint: new-breakpoint(max-width 768px 6);
+$main-color: #0000ff;
+
+div.grid-wrapper {
+  padding-top: 10px;
+  border-bottom: 0px;
+
+  margin-bottom: 200px;
+  .fullImage{
+    margin-top:20px;
+    @include span-columns(3);
+    text-align: center;
+
+
+    @include media($mobile-breakpoint){
+      @include span-columns(1);
+    }
+  }
+  .headLine{
+    margin-left: 20px;
+    @include span-columns(7);
+    color: lighten($main-color, 25%);
+
+    @include media($mobile-breakpoint){
+      @include span-columns(4);
+    }
+  }
+  .byLine{
+    font-size:12px;
+    font-family: 'Helvetica';
+    color: darken(white, 45%);
+
+    @include span-columns(7);
+    @include media($mobile-breakpoint){
+      @include span-columns(4);
+    }
+
+  }
+  .subHeader{
+    @include span-columns(7);
+    margin-top: 10px;
+
+    @include media($mobile-breakpoint){
+      @include span-columns(6);
+    }
+  }
+
+  .fullText{
+    margin-top:5px;
+    @include span-columns(7);
+
+    @include media($mobile-breakpoint){
+      @include span-columns(6);
+    }
+  }
+
+
+
+}
